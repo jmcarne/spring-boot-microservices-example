@@ -59,5 +59,35 @@
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>Desarrollo</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>dev</value>
+				</property>
+			</activation>
+        </profile>
+        <profile>
+            <id>Preproduccion</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>pre</value>
+                </property>
+            </activation>
+        </profile>
+        <profile>
+            <id>Produccion</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>pro</value>
+                </property>
+            </activation>
+		</profile>
+	</profiles>
+
 
 </project>
